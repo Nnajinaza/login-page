@@ -1,0 +1,76 @@
+body {
+	background-color: #111;
+	background-image: url('images/background-pic.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.formlist {
+	background-color: white;
+	width: 300px;
+	height: 400px;
+	line-height: 30px;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+/*	margin: 20px;*/
+}
+
+input {
+	height: 30px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid;
+	font-size: 15px;
+	font-style: poppins;
+	display: inline-block;
+
+}
+.top-icon {
+	width: 250px;
+	padding-top: 1px;
+}
+
+i {
+	padding-bottom: -10px;
+}
+
+.submit-ico i {
+/*	background-color: green;*/
+	position: absolute;
+	left: 150px;
+	font-size: 20px;
+	line-height: 30px;
+	display: flex;
+	justify-content: center;
+	width: 10%;
+}
+
+span input{
+	background-color: green;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+li {
+	display: block;
+	font-size: 20px;
+	float: left;
+	padding: 20px;
+	text-align: center;
+	transition: 0.5s ease;
+}
+.icon {
+	position: absolute;
+	left: 25px;
+	font-size: 20px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
