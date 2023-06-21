@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login page</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<form class="formlist">
-		<img class="top-icon" src="images/top-icon.jpg"><br>
-		<label class="Username"><i>Username</i></label><br>
-		<span class="icon"><i class="fa fa-solid fa-user"></i></span>
-		<input type="text" name="Username"><br>
-		<label for="password"><i>password</i></label><br>
-		<span class="icon"><i class=" fa fa-solid fa-lock"></i></span>
-		<input type="password" id="password" name="password"><br>
+		<img class="top-i" src="images/logo.jpg"><br>
+		<label for="Username" >Username</label>
+		<!-- <span class="icon"><i class="fa fa-solid fa-user"></i></span> -->
+		<input type="text" class="fa fa-solid fa-user" id="Username" placeholder="&#xf007" name="Username"><br>
+		<label for="password">password</label><br>
+		<!-- <span class="icon"><i class=" fa fa-solid fa-lock"></i></span> -->
+		<input type="password" class="fa fa-solid fa-lock" id="password" placeholder="&#xf023"><br>
 		<span class="submit-ico">
-			<i class="fa fa-solid fa-right-to-bracket"></i>
-			<input type="" name="">
+			<!-- <i class="fa fa-solid fa-right-to-bracket"></i> -->
+			<button onclick="redir()" type="button" class="submit-ico fa fa-solid fa-right-to-bracket"></button>
 		</span>
 		<ul>
-			<li>Forgot password?</li>
-			<li>Sign up</li>
-			</ul>
+			<li class="fp">Forgot password?</li>
+			<li class="signup">Sign up</li>
+		</ul>
+		<script type="text/javascript">
+			function redir() {
+				let Name = document.getElementById("Username").value
+				if (Name == "") {
+					alert("Username must be filled");
+				}
+				alert(Name);
+				let state = window.open("Welcome.html");
+				state.document.write("<p>Welcome</p>");
+				state.document.body("<p></p>").appendChild(Name);
+			}
+		</script>
 	</form>
 </body>
 </html>
