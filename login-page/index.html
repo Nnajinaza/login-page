@@ -12,34 +12,23 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<form class="formlist">
+	<form class="formlist" action="welcome.html">
 		<img class="top-i" src="images/logo.jpg"><br>
 		<label for="Username" >Username</label>
 		<!-- <span class="icon"><i class="fa fa-solid fa-user"></i></span> -->
-		<input type="text" class="fa fa-solid fa-user" id="Username" placeholder="&#xf007" name="Username"><br>
+		<input type="text" class="fa fa-solid fa-user" id="Username" placeholder="&#xf007" name="Username" value=""><br>
 		<label for="password">password</label><br>
 		<!-- <span class="icon"><i class=" fa fa-solid fa-lock"></i></span> -->
 		<input type="password" class="fa fa-solid fa-lock" id="password" placeholder="&#xf023"><br>
 		<span class="submit-ico">
 			<!-- <i class="fa fa-solid fa-right-to-bracket"></i> -->
-			<button onclick="redir()" type="button" class="submit-ico fa fa-solid fa-right-to-bracket"></button>
+			<button type="submit" class="submit-ico fa fa-solid fa-right-to-bracket" onclick="nameDisplayCheck()"></button>
 		</span>
 		<ul>
 			<li class="fp">Forgot password?</li>
 			<li class="signup">Sign up</li>
 		</ul>
-		<script type="text/javascript">
-			function redir() {
-				let Name = document.getElementById("Username").value
-				if (Name == "") {
-					alert("Username must be filled");
-				}
-				alert(Name);
-				let state = window.open("Welcome.html");
-				state.document.write("<p>Welcome</p>");
-				state.document.body("<p></p>").appendChild(Name);
-			}
-		</script>
+		<script src="index.js"></script>
 	</form>
 </body>
 </html>

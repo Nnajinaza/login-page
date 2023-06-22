@@ -1,5 +1,12 @@
-import { getInput } from index.html
-
-getInput().then(function(Name)) {
-	console.log("Welcome" + Name);
-}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+	</head>
+	<body>
+		<h1 class="welcome">WELCOME %=request.getParameter("Username") %</h1>
+		<script src="index.js"></script>
+	</body>
+</html>
