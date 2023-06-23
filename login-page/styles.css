@@ -23,11 +23,12 @@ html {
 
 input {
 	height: 30px;
-	width: 100%;
+	width: 90%;
 	border: none;
 	border-bottom: 1px solid #6363d1;
 	display: inline-block;
 	margin-bottom: 25px;
+	padding-left: 25px;
 }
 input::placeholder {
 	position: absolute;
